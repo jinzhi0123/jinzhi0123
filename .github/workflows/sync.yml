@@ -1,6 +1,6 @@
 name: Sync
 
-on: workflow_dispatch
+on: page_build
 
 jobs:
   build:
