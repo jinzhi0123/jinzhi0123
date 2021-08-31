@@ -173,8 +173,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-08-28 01:10" pubdate>
-        2021年8月28日 凌晨
+      <time datetime="2021-08-31 18:10" pubdate>
+        2021年8月31日 晚上
       </time>
     </span>
   
@@ -185,7 +185,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      168 字
+      373 字
     </span>
   
 
@@ -195,7 +195,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      4
        分钟
     </span>
   
@@ -228,7 +228,7 @@
             <h1 style="display: none">PicGo+Github+jsDelivr搭建个人图库</h1>
             
             <div class="markdown-body">
-              <h4 id="1-PicGo安装"><a href="#1-PicGo安装" class="headerlink" title="1.PicGo安装"></a>1.PicGo安装</h4><p>首先进入<a target="_blank" rel="noopener" href="https://molunerfinn.com/PicGo/">PicGo官网</a>下载安装包</p>
+              <h3 id="1-PicGo安装"><a href="#1-PicGo安装" class="headerlink" title="1.PicGo安装"></a>1.PicGo安装</h3><p>首先进入<a target="_blank" rel="noopener" href="https://molunerfinn.com/PicGo/">PicGo官网</a>下载安装包</p>
 <p><img src="https://cdn.jsdelivr.net/gh/jinzhi0123/image/img/Snipaste_2021-08-29_01-20-12.png" srcset="/img/loading.gif" lazyload></p>
 <p>点击免费下载进入GitHub，选择对应系统的安装包</p>
 <p><img src="https://cdn.jsdelivr.net/gh/jinzhi0123/image/img/Snipaste_2021-08-29_01-20-49.png" srcset="/img/loading.gif" lazyload></p>
@@ -236,7 +236,7 @@
 <p><img src="https://cdn.jsdelivr.net/gh/jinzhi0123/image/img/Snipaste_2021-08-29_01-21-13.png" srcset="/img/loading.gif" lazyload></p>
 <p>完成安装</p>
 <p><img src="https://cdn.jsdelivr.net/gh/jinzhi0123/image/img/Snipaste_2021-08-29_01-21-41.png" srcset="/img/loading.gif" lazyload></p>
-<h4 id="2-Github配置"><a href="#2-Github配置" class="headerlink" title="2.Github配置"></a>2.Github配置</h4><p>在Github创建一个仓库，名称随意</p>
+<h3 id="2-Github配置"><a href="#2-Github配置" class="headerlink" title="2.Github配置"></a>2.Github配置</h3><p>在Github创建一个仓库，名称随意</p>
 <p><img src="https://cdn.jsdelivr.net/gh/jinzhi0123/image/img/Snipaste_2021-08-31_17-33-32.png" srcset="/img/loading.gif" lazyload></p>
 <p>建立一个Token</p>
 <p><img src="https://cdn.jsdelivr.net/gh/jinzhi0123/image/img/Snipaste_2021-08-31_17-36-15.png" srcset="/img/loading.gif" lazyload></p>
@@ -246,14 +246,23 @@
 <p><img src="https://cdn.jsdelivr.net/gh/jinzhi0123/image/img/Snipaste_2021-08-31_17-37-22.png" srcset="/img/loading.gif" lazyload></p>
 <p>勾选<code>repo</code>权限并创建</p>
 <p>复制得到的Token</p>
-<h4 id="PicGo配置"><a href="#PicGo配置" class="headerlink" title="PicGo配置"></a>PicGo配置</h4><p><img src="https://cdn.jsdelivr.net/gh/jinzhi0123/image/img/Snipaste_2021-08-29_01-21-46.png" srcset="/img/loading.gif" lazyload></p>
+<h3 id="3-PicGo配置"><a href="#3-PicGo配置" class="headerlink" title="3.PicGo配置"></a>3.PicGo配置</h3><p><img src="https://cdn.jsdelivr.net/gh/jinzhi0123/image/img/Snipaste_2021-08-29_01-21-46.png" srcset="/img/loading.gif" lazyload></p>
 <ul>
 <li><code>仓库名</code>：Github用户名/图床仓库名</li>
 <li><code>分支名</code>：仓库的分支名</li>
 <li><code>Token</code>：之前生成的Token</li>
 <li><code>存储路径</code>：存储图片的路径，默认为 img/</li>
-<li><code>自定义域名</code>：试用CDN加速访问GitHub，这里使用jsDelivr<br>格式为 <a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BB%93%E5%BA%93%E5%90%8D">https://cdn.jsdelivr.net/gh/用户名/仓库名</a></li>
+<li><code>自定义域名</code>：使用CDN加速访问GitHub，这里使用jsDelivr,格式为 <a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/%E7%94%A8%E6%88%B7%E5%90%8D/%E4%BB%93%E5%BA%93%E5%90%8D">https://cdn.jsdelivr.net/gh/用户名/仓库名</a></li>
 </ul>
+<h3 id="4-关于jsDelivr"><a href="#4-关于jsDelivr" class="headerlink" title="4.关于jsDelivr"></a>4.关于jsDelivr</h3><p>jsDelivr是一个为npm、github等提供免费CDN的项目，使用其可以在全球范围内为你的项目提供访问加速服务，更多的用法可见<a target="_blank" rel="noopener" href="https://www.jsdelivr.com/features">jsDelivr官网</a>。</p>
+<p>jsDeliver无需配置，只需要格式符合要求，即可加速访问。比如，<a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/jinzhi0123/image/img/test.png">https://cdn.jsdelivr.net/gh/jinzhi0123/image/img/test.png</a> 即为访问jinzhi0123这个GitHub账户下的image仓库中img目录下的test.png文件。</p>
+<h3 id="5-PicGo与Typora配合使用"><a href="#5-PicGo与Typora配合使用" class="headerlink" title="5.PicGo与Typora配合使用"></a>5.PicGo与Typora配合使用</h3><p>Typora设置</p>
+<p><img src="https://cdn.jsdelivr.net/gh/jinzhi0123/image/img/Snipaste_2021-08-31_19-25-31.png" srcset="/img/loading.gif" lazyload></p>
+<p>Typora是一款非常常用的markdown文本编辑器，PicGo与Typora搭配使用非常舒服。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/jinzhi0123/image/img/Snipaste_2021-08-31_19-27-57.png" srcset="/img/loading.gif" lazyload></p>
+<p>如图配置，选择PicGo(app)并设置安装路径。之后在Typora插入图片时就会自动上传并将本地路径改为网络路径。</p>
+<p>你也可以在PicGo的相册中已上传的图片以md的格式直接复制到Typora。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/jinzhi0123/image/img/Snipaste_2021-08-31_19-32-58.png" srcset="/img/loading.gif" lazyload></p>
 
             </div>
             <hr>
