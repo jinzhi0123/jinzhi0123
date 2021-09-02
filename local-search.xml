@@ -4,6 +4,29 @@
   
   
   <entry>
+    <title>解决微软UWP应用无法走代理的问题</title>
+    <link href="/2021/09/02/%E8%A7%A3%E5%86%B3%E5%BE%AE%E8%BD%AFUWP%E5%BA%94%E7%94%A8%E6%97%A0%E6%B3%95%E8%B5%B0%E4%BB%A3%E7%90%86%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    <url>/2021/09/02/%E8%A7%A3%E5%86%B3%E5%BE%AE%E8%BD%AFUWP%E5%BA%94%E7%94%A8%E6%97%A0%E6%B3%95%E8%B5%B0%E4%BB%A3%E7%90%86%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>在Win10中，从商店中安装的UWP应用（比如Microsoft To Do），他们连接网络的时候都是直连。一旦你使用了代理软件，他们就无法访问网络了。及时你你没有开启全局代理，而是使用PAC指定特定域名走Direct直连，也是不行的。<br>这是为什么呢？实际上，我们从商店中安装的UWP应用都是安装在App Container（沙盒容器）中的，无法访问localhost，自然也就无法走本地代理。要让这些应用走本地代理，需要一些特殊的方法。</p><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><h3 id="下载安装Fiddler"><a href="#下载安装Fiddler" class="headerlink" title="下载安装Fiddler"></a>下载安装Fiddler</h3><p>访问<a href="https://www.telerik.com/fiddler">Fiddler抓包官网</a>，点击<code>FIddler Tools</code>-&gt;<code>Fiddler Classic</code>-&gt;<code>Download Now</code>，下载Classic版本即可：</p><p><img src="https://cdn.jsdelivr.net/gh/jinzhi0123/image/img/Snipaste_2021-09-02_21-03-55.png"></p><p><img src="https://cdn.jsdelivr.net/gh/jinzhi0123/image/img/Snipaste_2021-09-02_21-06-39.png"></p><p>按照提示回答<code>用途</code>、<code>邮箱</code>、<code>地区</code>即可开始下载：</p><p><img src="https://cdn.jsdelivr.net/gh/jinzhi0123/image/img/Snipaste_2021-09-02_21-07-26.png" alt="Snipaste_2021-09-02_21-07-26"></p><p>下载完之后默认安装。</p><h3 id="配置Fiddler"><a href="#配置Fiddler" class="headerlink" title="配置Fiddler"></a>配置Fiddler</h3><p>打开软件后点击<code>WinConfig</code>按钮：<img src="https://cdn.jsdelivr.net/gh/jinzhi0123/image/img/Snipaste_2021-09-02_21-10-04.png" alt="Snipaste_2021-09-02_21-10-04"></p><p>勾选需要的应用后，点击<code>Save Changes</code>按钮</p><p><img src="https://cdn.jsdelivr.net/gh/jinzhi0123/image/img/Snipaste_2021-09-02_21-11-32.png"></p><p>之后，你的UWP应用就能走本地代理了。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>代理</tag>
+      
+      <tag>UWP应用</tag>
+      
+      <tag>Fiddler</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>GitHub+Gitee+Hexo搭建免费的个人博客</title>
     <link href="/2021/08/31/GitHub+Gitee+Hexo%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <url>/2021/08/31/GitHub+Gitee+Hexo%E6%90%AD%E5%BB%BA%E5%85%8D%E8%B4%B9%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</url>
