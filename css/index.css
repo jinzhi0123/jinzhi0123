@@ -1672,7 +1672,7 @@ blockquote footer cite:before {
 }
 #article-container code {
   padding: 0.1rem 0.2rem;
-  background: rgba(243,244,244,0.5);
+  background: #f3f4f4;
   color: #8f6582;
 }
 #article-container pre {
@@ -5340,7 +5340,7 @@ blockquote.pullquote.right {
   box-shadow: none;
 }
 [data-theme='dark'] #article-container .note code {
-  background: rgba(243,244,244,0.5);
+  background: #f3f4f4;
 }
 [data-theme='dark'] #article-container .aplayer {
   filter: brightness(0.8);
