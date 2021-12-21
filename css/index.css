@@ -3302,23 +3302,17 @@ li.categoryBar-list-item:nth-child(4) {
   background: -ms-linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%);
   background: linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%);
 }
-li.categoryBar-list-item:nth-child(5) {
-  background: url('https://cdn.jsdelivr.net/npm/akilar-candyassets/image/cover5.webp');
-}
-li.categoryBar-list-item:nth-child(6) {
-  background: url('https://cdn.jsdelivr.net/npm/akilar-candyassets/image/cover6.webp');
-}
 li.categoryBar-list-item:nth-child(1)>span::after {
-  content: !important;
+  content: '顶顶顶顶' !important;
 }
 li.categoryBar-list-item:nth-child(2)>span::after {
-  content: !important;
+  content: '顶顶顶顶' !important;
 }
 li.categoryBar-list-item:nth-child(3)>span::after {
-  content: !important;
+  content: '顶顶顶顶' !important;
 }
 li.categoryBar-list-item:nth-child(4)>span::after {
-  content: !important;
+  content: '顶顶顶顶' !important;
 }
 li.categoryBar-list-item {
   width: 24% !important;
