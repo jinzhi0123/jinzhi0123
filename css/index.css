@@ -3287,7 +3287,11 @@ span.categoryBar-list-count::after {
   right: -100%;
 }
 li.categoryBar-list-item:nth-child(1) {
-  background: url('https://cdn.jsdelivr.net/npm/akilar-candyassets/image/cover1.webp');
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%);
+  background: -moz-linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%);
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%);
+  background: -ms-linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%);
+  background: linear-gradient(rgba(0, 0, 0, 0.4) 25%, rgba(200,16 , 16, 0) 100%);
 }
 li.categoryBar-list-item:nth-child(2) {
   background: #abcdef;
@@ -3309,16 +3313,16 @@ li.categoryBar-list-item:nth-child(6) {
   background: url('https://cdn.jsdelivr.net/npm/akilar-candyassets/image/cover6.webp');
 }
 li.categoryBar-list-item:nth-child(1)>span::after {
-  content: '博客搭建' !important;
+  content: !important;
 }
 li.categoryBar-list-item:nth-child(2)>span::after {
-  content: '学习记录' !important;
+  content: !important;
 }
 li.categoryBar-list-item:nth-child(3)>span::after {
-  content: '系统软件' !important;
+  content: !important;
 }
 li.categoryBar-list-item:nth-child(4)>span::after {
-  content: '个人日记' !important;
+  content: !important;
 }
 li.categoryBar-list-item {
   width: 24% !important;
